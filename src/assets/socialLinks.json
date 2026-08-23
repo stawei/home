@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Github",
+    "icon": "ri-github-fill",
+    "tip": "去 GitHub 看看吧",
+    "url": "https://github.com/stawei"
+  },
+  {
+    "name": "BiliBili",
+    "icon": "ri-bilibili-fill",
+    "tip": " (゜-゜)つロ 干杯~",
+    "url": "https://space.bilibili.com/516107164"
+  },
+  {
+    "name": "QQ",
+    "icon": "ri-qq-fill",
+    "tip": "有事请联系我吧",
+    "url": "https://res.abeim.cn/api/qq/?qq=2963286491"
+  },
+  {
+    "name": "Email",
+    "icon": "ri-mail-fill",
+    "tip": "来封 Email ~",
+    "url": "2963286491@qq.com"
+  },
+  {
+    "name": "Twitter",
+    "icon": "ri-twitter-x-fill",
+    "tip": "我寄愁心与明月",
+    "url": "https://twitter.com/zxw2963286491"
+  },
+  {
+    "name": "Facebook",
+    "icon": "ri-facebook-fill",
+    "tip": "念念不忘,必有回响",
+    "url": "https://www.facebook.com/xingwei.zhang.5209"
+  }
+]
