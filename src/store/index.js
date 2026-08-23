@@ -5,7 +5,7 @@ export const mainStore = defineStore("main", {
     return {
       imgLoadStatus: false, // 壁纸加载状态
       innerWidth: null, // 当前窗口宽度
-      coverType: "0", // 壁纸种类 0=默认 1=自定义壁纸 2=壁纸API
+      coverType: "1", // 壁纸种类 0=默认 1=自定义壁纸 2=壁纸API
       customCoverUrl: import.meta.env.VITE_CUSTOM_COVER_URL || "", // 自定义壁纸链接（图片/MP4），可在 .env 中配置
       customApiUrl: import.meta.env.VITE_CUSTOM_API_URL || "", // 壁纸API链接，可在 .env 中配置
       siteStartShow: false, // 建站日期显示
