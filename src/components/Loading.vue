@@ -1,12 +1,14 @@
 <template>
   <div id="loader-wrapper" :class="store.imgLoadStatus ? 'loaded' : null">
     <div class="loader">
-      <div class="loader-circle" />
+      <div class="loader-circle">
+        <img :src="avatarUrl" class="loader-avatar" alt="avatar" />
+      </div>
       <div class="loader-text">
         <span class="name">
           {{ siteName }}
         </span>
-        <span class="tip"> 加载中 </span>
+        <span class="tip"> 加载中^_^ </span>
       </div>
     </div>
     <div class="loader-section section-left" />
@@ -21,6 +23,7 @@ const store = mainStore();
 
 // 配置
 const siteName = import.meta.env.VITE_SITE_NAME;
+const avatarUrl = import.meta.env.VITE_SITE_AVATAR || "/images/icon/avatar.png";
 </script>
 
 <style lang="scss" scoped>
@@ -50,6 +53,9 @@ const siteName = import.meta.env.VITE_SITE_NAME;
       border-top-color: #fff;
       animation: spin 1.8s linear infinite;
       z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       &:before {
         content: "";
@@ -75,6 +81,15 @@ const siteName = import.meta.env.VITE_SITE_NAME;
         border: 3px solid transparent;
         border-top-color: #d3d3d3;
         animation: spin 1s linear infinite;
+      }
+
+      .loader-avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        z-index: 3;
+        animation: spin-reverse 1.8s linear infinite;
       }
     }
     .loader-text {
